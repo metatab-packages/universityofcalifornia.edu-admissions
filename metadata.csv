@@ -1,6 +1,10 @@
 Declare,metatab-latest
 Title,"University of California Admissions by Source School, 2016 to 2022"
-Description,"These tables present information on UC’s Applicants, Admits, and Enrollees. Freshman applicant counts are presented for fall and transfer counts are presented for the full academic year.  Mean high school and transfer GPA are presented for freshman and transfer applicants, admits, and enrollees respectively by source school."
+Description,"These tables present information on UC’s Applicants, Admits, and Enrollees."
+Description,Freshman applicant counts are presented for fall and transfer counts are
+Description,presented for the full academic year.  Mean high school and transfer GPA are
+Description,"presented for freshman and transfer applicants, admits, and enrollees"
+Description,respectively by source school.
 Identifier,6c2ad239-0622-490a-983a-aca4241c0b20
 Name,universityofcalifornia.edu-admissions-1.1.1
 Dataset,admissions
@@ -14,16 +18,19 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2023-04-24T02:34:01
-Modified,2023-04-24T02:34:01
-
+Modified,2023-04-24T19:52:31
+Giturl,https://github.com/metatab-packages/universityofcalifornia.edu-admissions.git
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-Downloadpage,https://www.universityofcalifornia.edu/about-us/information-center/admissions-source-school,Data Viz Page,THe web page that hosts the datavizualization
+Downloadpage,https://www.universityofcalifornia.edu/about-us/information-center/admissions-source-school,Data Viz Page,THe web page that hosts the datavizualization,
+""
 Section,References,Name,Description,
-
+""
 Section,Resources,Name,Description,
-Datafile,notebooks/build.ipynb,uc_admissions,"UC admissions data, by source school, for multiple years"
+Datafile,notebooks/build.ipynb,uc_admissions,"UC admissions data, by source school, for multiple years",
+""
 Section,Schema,DataType,AltName,Description
