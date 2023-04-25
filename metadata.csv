@@ -6,19 +6,19 @@ Description,presented for the full academic year.  Mean high school and transfer
 Description,"presented for freshman and transfer applicants, admits, and enrollees"
 Description,respectively by source school.
 Identifier,6c2ad239-0622-490a-983a-aca4241c0b20
-Name,universityofcalifornia.edu-admissions-1.1.1
+Name,universityofcalifornia.edu-admissions-1.1.2
 Dataset,admissions
 Origin,universityofcalifornia.edu
 Time,
 Space,
 Grain,
 Variant,
-Version,1.1.1
+Version,1.1.2
 Version.Major,1
 Version.Minor,1
-Version.Patch,1
+Version.Patch,2
 Created,2023-04-24T02:34:01
-Modified,2023-04-24T19:52:31
+Modified,2023-04-25T03:32:13
 Giturl,https://github.com/metatab-packages/universityofcalifornia.edu-admissions.git
 ""
 Section,Contacts,Email,Organization,Url
@@ -29,8 +29,50 @@ Documentation,file:README.md,README,,
 Downloadpage,https://www.universityofcalifornia.edu/about-us/information-center/admissions-source-school,Data Viz Page,THe web page that hosts the datavizualization,
 ""
 Section,References,Name,Description,
+Reference,metapack+http://library.metatab.org/cde.ca.gov-schools-2.1.1.csv,public_schools,California public schools,
 ""
 Section,Resources,Name,Description,
-Datafile,notebooks/build.ipynb,uc_admissions,"UC admissions data, by source school, for multiple years",
+Datafile,notebooks/build.ipynb#df,uc_admissions,"UC admissions data, by source school, for multiple years",
+Datafile,notebooks/build.ipynb#match_df,matches,Control file for the name matching between the UC data and CDE records.,
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,Has_Codes
+Table,uc_admissions,,
+Table.Column,year,integer,
+Table.Column,cdscode,integer,
+Table.Column,ncesdist,string,
+Table.Column,ncesschool,string,
+Table.Column,school,string,
+Table.Column,uc_school,string,
+Table.Column,campus,string,
+Table.Column,uc_city,string,
+Table.Column,cde_city,string,
+Table.Column,county,string,
+Table.Column,county,string,
+Table.Column,district,string,
+Table.Column,count,string,
+Table.Column,all,integer,
+Table.Column,black,integer,
+Table.Column,aian,integer,
+Table.Column,hisp,integer,
+Table.Column,nhpi,integer,
+Table.Column,asian,integer,
+Table.Column,white,integer,
+Table.Column,na,integer,
+Table.Column,international,integer,
+Table.Column,region_y,string,
+Table.Column,charter,string,
+Table.Column,virtual,string,
+Table.Column,magnet,string,
+Table.Column,eilname,string,
+Table.Column,gsserved,string,
+Table.Column,zip,string,
+Table.Column,latitude,number,
+Table.Column,longitude,number,
+Table.Column,score,number,
+Table,matches,,
+Table.Column,score,integer,
+Table.Column,qscore,integer,
+Table.Column,match_school,string,
+Table.Column,match,string,
+Table.Column,region,string,
+Table.Column,cdscode,integer,
